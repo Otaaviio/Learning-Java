@@ -1,0 +1,8 @@
+INDEX VERSION 1.134+C:\Users\inaba\OneDrive\Documents\Atalhos\Udemy\Cuso Java\projetos eclipse\.metadata\.plugins\org.eclipse.jdt.core
+1559387518.index
+1506730008.index
+3406171383.index
+3557961779.index
+3589805815.index
+3710830550.index
+1865797976.index

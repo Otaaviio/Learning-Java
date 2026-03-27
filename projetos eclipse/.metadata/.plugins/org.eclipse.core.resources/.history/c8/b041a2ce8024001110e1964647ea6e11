@@ -1,0 +1,32 @@
+package poo;
+
+import java.util.Scanner;
+
+public class Area {
+
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner(System.in);
+		
+		Triangle x, y;
+		x = new Triangle();
+		y = new Triangle();
+		
+		System.out.println("Triangle x");
+		x.a = sc.nextDouble();
+		x.b = sc.nextDouble();
+		x.c = sc.nextDouble();
+		
+		System.out.println("Triangle y");
+		y.a = sc.nextDouble();
+		y.b = sc.nextDouble();
+		y.c = sc.nextDouble();
+		
+		double areaX = x.calcArea();
+		double areaY = x.calcArea();
+		
+		System.out.printf("Area triangulo x: %.4d\n", areaX);
+		System.out.printf("Area triangulo x: %.4d\n", areaX);
+	}
+	
+}

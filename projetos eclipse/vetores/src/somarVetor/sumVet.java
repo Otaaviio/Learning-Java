@@ -1,0 +1,46 @@
+package somarVetor;
+
+import java.util.Locale;
+import java.util.Scanner;
+
+public class sumVet {
+
+	public static void main(String[] args) {
+		
+		Locale.setDefault(Locale.US);
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.println("Quantos números vai digitar ?");
+		int n =  sc.nextInt();
+		
+		double[] arr = new double[n];
+		
+		for (int i = 0; i < arr.length; i++) {
+			System.out.println("Digite seu número: ");
+			arr[i] = sc.nextDouble();
+		}
+		
+		System.out.println("Valores: ");
+		
+	    for (int i=0; i<n; i++) {
+	    	System.out.printf("%.1f  ", arr[i]);
+	    }
+		
+		System.out.println("Soma: " + Soma(arr));
+		System.out.println("Media: " + Media(Soma(arr), arr.length));
+		
+	}
+	
+	static double Soma(double[] arr) {
+		double result = 0;
+		for (int i = 0; i < arr.length; i++) {
+			result += arr[i];
+		}
+		return result;
+	}
+	
+	static double Media(double sum, int lenArr) {
+		return sum / lenArr;
+	}
+
+}

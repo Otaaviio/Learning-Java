@@ -1,0 +1,40 @@
+package pensionato;
+
+import java.util.Locale;
+import java.util.Scanner;
+
+public class Pensionato {
+
+	static Object[] quartos = new Object[10];
+	
+	public static void main(String[] args) {
+		
+		Locale.setDefault(Locale.US);
+		Scanner sc = new Scanner(System.in);
+		
+		SetVazio();
+
+		System.out.println("Qauntos estudantyes vão alugar os quartos ?");
+		int queremAlugar = sc.nextInt();
+		
+		for (int i = 0; i < queremAlugar; i++) {
+			String nome = sc.nextLine();
+			String email = sc.nextLine();
+			int qualQuarto = sc.nextInt() - 1;
+			
+			if (quartos[qualQuarto].contains("vazio")) {
+				Aluno alun = new Aluno(nome, email);
+				quartos[qualQuarto] = alun;
+			}
+			
+		}
+		
+	}
+	
+	static void SetVazio() {
+		for (int i = 0; i < quartos.length; i++) {
+			quartos[i] = "Quarto " + i + " vazio";
+		}
+	}
+
+}

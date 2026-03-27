@@ -1,0 +1,33 @@
+package pensionato;
+
+import java.util.Locale;
+import java.util.Scanner;
+
+public class Pensionato {
+
+	static String[] quartos = new String[10];
+	
+	public static void main(String[] args) {
+		
+		Locale.setDefault(Locale.US);
+		Scanner sc = new Scanner(System.in);
+		
+		SetVazio();
+
+		System.out.println("Qauntos estudantyes vão alugar os quartos ?");
+		int queremAlugar = sc.nextInt();
+		
+		for (int i = 0; i < queremAlugar; i++) {
+			
+		}
+		
+	}
+	
+	static void SetVazio() {
+		for (int i = 0; i < quartos.length; i++) {
+			quartos[i] = "Quarto" + i + "vazio";
+			System.out.println(quartos[i]);
+		}
+	}
+
+}
